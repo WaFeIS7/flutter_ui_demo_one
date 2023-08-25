@@ -5,6 +5,8 @@ import 'package:flutter_demo_1/screens/product/product_details.dart';
 import 'package:flutter_demo_1/widgets_helpers/text_style.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
+
 
 class ProductListcreen extends ConsumerStatefulWidget {
   const ProductListcreen({super.key});
@@ -25,8 +27,8 @@ class _ProductListcreen extends ConsumerState<ProductListcreen> {
         padding: const EdgeInsets.all(10),
         child: products.when(
             error: (((error, stackTrace) =>
-                Text('Something Went wrong $error, $stackTrace'))),
-            loading: () => const LinearProgressIndicator(color: Colors.red),
+                Center(child: Text('Something Went wrong $error, $stackTrace')))),
+            loading: () => Center(child: LoadingAnimationWidget.threeArchedCircle(color: Colors.yellowAccent, size: 100)),
             data: (data) {
               if (data.isEmpty) {
                 return const Text('No values');
