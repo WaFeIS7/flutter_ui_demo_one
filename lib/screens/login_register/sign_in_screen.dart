@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_1/screens/key_contants.dart';
 import 'package:flutter_demo_1/screens/login_register/sign_up_screen.dart';
 import 'package:flutter_demo_1/screens/product/product_list_screen.dart';
 import 'package:flutter_demo_1/widgets_helpers/button_welcome_screen.dart';
@@ -69,7 +70,7 @@ class SignIn extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(top: 26, left: 33, right: 33),
               child: ButtonWelcomeScreen(
-                  nameButton: 'Continue', widget: ProductListcreen()),
+                  nameButton: 'Continue', valueKey: buttonContinueSignIn, widget: ProductListcreen()),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 18, left: 35),

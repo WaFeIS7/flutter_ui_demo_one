@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_1/screens/key_contants.dart';
 import 'package:flutter_demo_1/screens/login_register/sign_in_screen.dart';
 import 'package:flutter_demo_1/widgets_helpers/button_welcome_screen.dart';
 
@@ -44,7 +45,7 @@ class SignUpSuccesScreen extends StatelessWidget {
          Padding(
             padding: EdgeInsets.only(top: 126, left: 33, right: 33),
             child: ButtonWelcomeScreen(
-                nameButton: 'Continue', widget: SignIn()),
+                nameButton: 'Continue', valueKey: buttonContinueSignUpSuccess, widget: SignIn()),
           ),
         ],
       ),
