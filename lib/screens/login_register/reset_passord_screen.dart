@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_1/screens/key_contants.dart';
 import 'package:flutter_demo_1/screens/login_register/sign_in_screen.dart';
 import 'package:flutter_demo_1/widgets_helpers/button_welcome_screen.dart';
 
@@ -92,7 +93,7 @@ class ResetPasswordScreen extends StatelessWidget {
           Padding(
               padding: EdgeInsets.only(top: 56, left: 33, right: 33),
               child: ButtonWelcomeScreen(
-                  nameButton: 'Submitting', widget: SignIn()),
+                  nameButton: 'Submitting', valueKey: buttonSubmitting, widget: SignIn()),
             ),
           
           ],

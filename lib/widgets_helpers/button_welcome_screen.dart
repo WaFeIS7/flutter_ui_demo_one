@@ -5,9 +5,10 @@ import 'package:flutter_demo_1/screens/login_register/sign_up_screen.dart';
 class ButtonWelcomeScreen extends StatelessWidget {
 
     const ButtonWelcomeScreen(
-      {super.key, required this.nameButton, this.widget = const SignUpScreen() });
+      {super.key, required this.nameButton, required this.valueKey, this.widget = const SignUpScreen() });
   final String nameButton;
   final Widget widget;
+  final ValueKey valueKey;
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,7 @@ class ButtonWelcomeScreen extends StatelessWidget {
       child: Align(
         alignment: Alignment.center,
         child: Text(
+          key: valueKey,
           nameButton,
           style: const TextStyle(
               fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black),

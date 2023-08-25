@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_1/screens/key_contants.dart';
 import 'package:flutter_demo_1/widgets_helpers/button_welcome_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -25,11 +26,11 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(top: 18, left: 33, right: 33),
-              child: ButtonWelcomeScreen(nameButton: 'Worker'),
+              child: ButtonWelcomeScreen(nameButton: 'Worker', valueKey: buttonWorker),
             ),
             Padding(
               padding: EdgeInsets.only(top: 8, left: 33, right: 33),
-              child: ButtonWelcomeScreen(nameButton: 'Customer'),
+              child: ButtonWelcomeScreen(nameButton: 'Customer', valueKey: buttonCustomer),
             ),
           ]),
     );
