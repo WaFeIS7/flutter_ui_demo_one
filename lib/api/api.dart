@@ -4,8 +4,8 @@ import 'package:flutter_demo_1/api/model/product.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
 
-final FutureProvider<List<Product>> providerProducts =
-    FutureProvider<List<Product>>((ref) {
+final AutoDisposeFutureProvider<List<Product>> providerProducts =
+    FutureProvider.autoDispose<List<Product>>((ref) {
   return Api().getProducts();
 });
 
