@@ -10,93 +10,95 @@ class ResetPasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child:  Scaffold(
-        body: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.only(top: 98),
-              child: Center(
-                  child: Image(
-                image: AssetImage('assets/6.png'),
-                width: 309.87,
-                height: 226.66,
-              )),
-            ),
-    
-            Padding(
-              padding: EdgeInsets.only(left: 24, top: 60),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Forgot ',
-                  style: TextStyle(
-                      fontSize: 40,
-                      fontFamily: 'PlusJakartaSans',
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black),
-                ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(top: 98),
+                child: Center(
+                    child: Image(
+                  image: AssetImage('assets/6.png'),
+                  width: 309.87,
+                  height: 226.66,
+                )),
               ),
-            ),  
-    
-           Padding(
-              padding: EdgeInsets.only(left: 24, top: 6),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Password?',
-                  style: TextStyle(
-                      fontSize: 40,
-                      fontFamily: 'PlusJakartaSans',
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black),
-                ),
-              ),
-            ),  
-     
-      
-    
-            Padding(
-              padding: EdgeInsets.only(left: 27, top: 8, right: 27),
-              child: TextField(
-                style: TextStyle(
-                    fontSize: 16,
-                    fontFamily: 'PlusJakartaSans',
-                    fontWeight: FontWeight.w400,
-                    color: Color.fromARGB(255, 152, 63, 63)),
-                decoration: InputDecoration(
-                  icon: Icon(
-                    Icons.email,
-                    size: 13,
+            
+              Padding(
+                padding: EdgeInsets.only(left: 24, top: 60),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Forgot ',
+                    style: TextStyle(
+                        fontSize: 40,
+                        fontFamily: 'PlusJakartaSans',
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black),
                   ),
-                  label: Text('NewPassword'),
                 ),
-              ),
-            ),
-    
-            Padding(
-              padding: EdgeInsets.only(left: 27, top: 8, right: 27),
-              child: TextField(
-                style: TextStyle(
-                    fontSize: 16,
-                    fontFamily: 'PlusJakartaSans',
-                    fontWeight: FontWeight.w400,
-                    color: Color.fromARGB(255, 152, 63, 63)),
-                decoration: InputDecoration(
-                  icon: Icon(
-                    Icons.email,
-                    size: 13,
+              ),  
+            
+             Padding(
+                padding: EdgeInsets.only(left: 24, top: 6),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Password?',
+                    style: TextStyle(
+                        fontSize: 40,
+                        fontFamily: 'PlusJakartaSans',
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black),
                   ),
-                  label: Text('Confirm Password'),
+                ),
+              ),  
+             
+              
+            
+              Padding(
+                padding: EdgeInsets.only(left: 27, top: 8, right: 27),
+                child: TextField(
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'PlusJakartaSans',
+                      fontWeight: FontWeight.w400,
+                      color: Color.fromARGB(255, 152, 63, 63)),
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.email,
+                      size: 13,
+                    ),
+                    label: Text('NewPassword'),
+                  ),
                 ),
               ),
-            ),
-    
-          Padding(
-              padding: EdgeInsets.only(top: 56, left: 33, right: 33),
-              child: ButtonWelcomeScreen(
-                  nameButton: 'Submitting', valueKey: buttonSubmitting, widget: SignIn()),
-            ),
-          
-          ],
+            
+              Padding(
+                padding: EdgeInsets.only(left: 27, top: 8, right: 27),
+                child: TextField(
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'PlusJakartaSans',
+                      fontWeight: FontWeight.w400,
+                      color: Color.fromARGB(255, 152, 63, 63)),
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.email,
+                      size: 13,
+                    ),
+                    label: Text('Confirm Password'),
+                  ),
+                ),
+              ),
+            
+            Padding(
+                padding: EdgeInsets.only(top: 56, left: 33, right: 33),
+                child: ButtonWelcomeScreen(
+                    nameButton: 'Submitting', valueKey: buttonSubmitting, widget: SignIn()),
+              ),
+            
+            ],
+          ),
         ),
       ),
     );
