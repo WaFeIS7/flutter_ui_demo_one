@@ -1,16 +1,12 @@
-# flutter_demo_1
+# Flutter demo UI. 
+I am learning Flutter.
+This project made by me to prepare to the future interviews. 
+Current project has several screens with clicakble buttons, without manangement state. Just used riverpod future provider to make api call to get data and to display. 
+Also, added several Widgets tests.
+## Video of work
 
-A new Flutter project.
+https://github.com/WaFeIS7/flutter_ui_demo_one/assets/13627178/7e9720f7-51d2-4d7c-a721-dc3c3d44e167
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshort of the Widget tests on the CI
+![image](https://github.com/WaFeIS7/flutter_ui_demo_one/assets/13627178/ddd9e593-b66b-4a6f-804b-c012ab24a72d)
