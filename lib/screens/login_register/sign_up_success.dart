@@ -8,7 +8,7 @@ class SignUpSuccesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
+    return const Scaffold(
       body: Column(
         children: [
           Padding(
@@ -40,12 +40,12 @@ class SignUpSuccesScreen extends StatelessWidget {
                 fontWeight: FontWeight.w400,
                 color: Colors.black),
           ),
-        
-
-         Padding(
+          Padding(
             padding: EdgeInsets.only(top: 126, left: 33, right: 33),
             child: ButtonWelcomeScreen(
-                nameButton: 'Continue', valueKey: buttonContinueSignUpSuccess, widget: SignIn()),
+                nameButton: 'Continue',
+                valueKey: buttonContinueSignUpSuccess,
+                widget: SignIn()),
           ),
         ],
       ),

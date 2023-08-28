@@ -39,7 +39,8 @@ class SignUpScreen extends StatelessWidget {
               children: [
                 MyTextField(hintTextField: 'Email', icon: Icons.email),
                 MyTextField(hintTextField: 'Full Name', icon: Icons.near_me),
-                MyTextField(hintTextField: 'Mobile', icon: Icons.mobile_friendly),
+                MyTextField(
+                    hintTextField: 'Mobile', icon: Icons.mobile_friendly),
                 MyTextField(hintTextField: 'Password', icon: Icons.password),
               ],
             ),
@@ -57,7 +58,9 @@ class SignUpScreen extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.only(top: 26, left: 33, right: 33),
             child: ButtonWelcomeScreen(
-                nameButton: 'Continue', valueKey: buttonContinueSignUp, widget: SignUpSuccesScreen()),
+                nameButton: 'Continue',
+                valueKey: buttonContinueSignUp,
+                widget: SignUpSuccesScreen()),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 33, right: 33, top: 28),
