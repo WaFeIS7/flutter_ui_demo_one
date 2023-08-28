@@ -35,7 +35,7 @@ class SignIn extends StatelessWidget {
                 ),
               ),
             ),
-           const Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 31, right: 31),
               child: Column(
                 children: [
@@ -70,7 +70,9 @@ class SignIn extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(top: 26, left: 33, right: 33),
               child: ButtonWelcomeScreen(
-                  nameButton: 'Continue', valueKey: buttonContinueSignIn, widget: ProductListcreen()),
+                  nameButton: 'Continue',
+                  valueKey: buttonContinueSignIn,
+                  widget: ProductListcreen()),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 18, left: 35),

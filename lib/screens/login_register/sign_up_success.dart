@@ -8,48 +8,46 @@ class SignUpSuccesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.only(top: 98),
-              child: Center(
-                  child: Image(
-                image: AssetImage('assets/1.png'),
-                width: 309.87,
-                height: 226.66,
-              )),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 28, bottom: 8),
-              child: Center(
-                  child: Image(
-                image: AssetImage('assets/5.png'),
-                width: 309.87,
-                height: 226.66,
-              )),
-            ),
-            Text(
-              'Signed up Successfully',
-              style: TextStyle(
-                  fontFamily: 'PlusJakartaSans',
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
-            ),
-          
-      
-           Padding(
-              padding: EdgeInsets.only(top: 126, left: 33, right: 33),
-              child: ButtonWelcomeScreen(
-                  nameButton: 'Continue', valueKey: buttonContinueSignUpSuccess, widget: SignIn()),
-            ),
-          ],
-        ),
+    return const Scaffold(
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(top: 98),
+            child: Center(
+                child: Image(
+              image: AssetImage('assets/1.png'),
+              width: 309.87,
+              height: 226.66,
+            )),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 28, bottom: 8),
+            child: Center(
+                child: Image(
+              image: AssetImage('assets/5.png'),
+              width: 309.87,
+              height: 226.66,
+            )),
+          ),
+          Text(
+            'Signed up Successfully',
+            style: TextStyle(
+                fontFamily: 'PlusJakartaSans',
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: Colors.black),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 126, left: 33, right: 33),
+            child: ButtonWelcomeScreen(
+                nameButton: 'Continue',
+                valueKey: buttonContinueSignUpSuccess,
+                widget: SignIn()),
+          ),
+        ],
       ),
     );
   }
